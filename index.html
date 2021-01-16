@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet">
+  <link rel="stylesheet" href="">
   <title>Kevin's Page</title>
 </head>
 
@@ -39,8 +39,8 @@
         </ul>
     </nav>
     <section id="Randomtopics">
-        <span id="classes">
-            <h2>Classes I Am Taking Winter 2021</h2>
+        <h2>Classes I Am Taking Winter 2021</h2>
+        <div id="classes">
             <ul>
                 <li><b>CSE 110 Software Engineering</b></li>
                 <li>CSE 141 Intro to Computer Architecture</li>
@@ -49,8 +49,8 @@
                 <li>ECON 173A Financial Markets</li>
                 <li>MATH 171A Intro to Numerical Optimization/Linear Programming</li>
             </ul>
-        </span>
-        <span id="todolist">
+        </div>
+        <div id="todolist">
             <h2>To Do List</h2>
             <ol>
                 <li>Write some code</li>
@@ -58,9 +58,9 @@
                 <li>Eat</li>
                 <li><i>Watch Bitcoin hit $40,000 ATH</i></li>
             </ol>
-        </span>
+        </div>
+        <h2>Code Quoting Example</h2>
         <span id="codeexample">
-            <h2>Code Quoting Example</h2>
             <code>
                 #!/usr/bin/python3<br>
                 print("Hello World!")
@@ -71,16 +71,16 @@
     <div id="misc">
         <aside id="quote">
             <h2>My Favorite Quote</h2>
-            <p><pre><strong>Tesla stock price is too high imo</strong><br>    - <em>Elon Musk</em></pre></p>
-            <iframe border=0 frameborder=0 height=250 width=550 src="https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Felonmusk%2Fstatus%2F1256239815256797184"></iframe>
+            <pre><strong>Tesla stock price is too high imo</strong><br>    - <em>Elon Musk</em></pre>
+            <iframe height=250 width=550 src="https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Felonmusk%2Fstatus%2F1256239815256797184"></iframe>
         </aside>
-        <span id="favfruit">
+        <div id="favfruit">
             <fieldset>
                 <legend>So you said you like coconuts?</legend>
                 <h2>My Favorite Fruit</h2>
                 <picture>
                     <source media="(min-width:700px)" srcset="3711.jpg" width="600" height="400">
-                    <img src="Coconuts-1280x720.jpg" width="600" height="400">
+                    <img src="Coconuts-1280x720.jpg" width="600" height="400" alt="Nani">
                 </picture>
                 <details>
                     <summary>What is a coconut? A fruit.</summary>
@@ -145,7 +145,7 @@
                     <button type="button">Click if you like Coconuts!</button>
                   </template>
             </fieldset>
-        </span>
+        </div>
     </div>
 
     <div id="draw">
