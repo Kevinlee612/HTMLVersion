@@ -4,23 +4,200 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet">
   <title>Kevin's Page</title>
 </head>
 
 <body>
-
     <header>
         <h1>Welcome to my page!</h1>
     </header>
 
+    <main>
+        <figure>
+            <img src="headshot.png" height="600" width="450">
+            <figcaption>Myself - Suk Chan (Kevin) Lee</figcaption>
+        </figure>
+        <h2>About Me</h2>
+        <p>I'm currently an undergraduate at the University of California San Diego and major in Computer Science (B.S) and Mathematics-Economics (B.S).<br>
+            My infatuation with the capabilities of well-designed software is what led me to delve into the field of software and I hope to lead a start-up in the near future.<br>
+            I am very interested in the field of finance (hence a business minor) and am currently a CFA Level 1 candidate.</p>
+    </main>
+    <hr>
     <nav>
+        <h2>Table of Contents</h2>
         <ul>
+            <li><a href="#classes">Classes I Am Taking Winter 2021</a></li>
+            <li><a href="#todolist">To Do List</a></li>
+            <li><a href="#codeexample">Code Quoting Example</a></li>
+            <li><a href="#quote">My Favorite Quote</a></li>
+            <li><a href="#favfruit">My Favorite Fruit</a></li>
+            <li><a href="#draw">Empty White Canvas</a></li>
+            <li><a href="#draw2">Some kinda circle</a></li>
+            <li><a href="#inputs">Some kinda inputs, do whatever you want</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <section id="Randomtopics">
+        <span id="classes">
+            <h2>Classes I Am Taking Winter 2021</h2>
+            <ul>
+                <li><b>CSE 110 Software Engineering</b></li>
+                <li>CSE 141 Intro to Computer Architecture</li>
+                <li>CSE 141L Projects on Computer Architecture</li>
+                <li>ECON 100C Microeconomics</li>
+                <li>ECON 173A Financial Markets</li>
+                <li>MATH 171A Intro to Numerical Optimization/Linear Programming</li>
+            </ul>
+        </span>
+        <span id="todolist">
+            <h2>To Do List</h2>
+            <ol>
+                <li>Write some code</li>
+                <li>Watch lectures</li>
+                <li>Eat</li>
+                <li><i>Watch Bitcoin hit $40,000 ATH</i></li>
+            </ol>
+        </span>
+        <span id="codeexample">
+            <h2>Code Quoting Example</h2>
+            <code>
+                #!/usr/bin/python3<br>
+                print("Hello World!")
+            </code>
+        </span>
+    </section>
 
-    <div class=container>
+    <div id="misc">
+        <aside id="quote">
+            <h2>My Favorite Quote</h2>
+            <p><pre><strong>Tesla stock price is too high imo</strong><br>    - <em>Elon Musk</em></pre></p>
+            <iframe border=0 frameborder=0 height=250 width=550 src="https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Felonmusk%2Fstatus%2F1256239815256797184"></iframe>
+        </aside>
+        <span id="favfruit">
+            <fieldset>
+                <legend>So you said you like coconuts?</legend>
+                <h2>My Favorite Fruit</h2>
+                <picture>
+                    <source media="(min-width:700px)" srcset="3711.jpg" width="600" height="400">
+                    <img src="Coconuts-1280x720.jpg" width="600" height="400">
+                </picture>
+                <details>
+                    <summary>What is a coconut? A fruit.</summary>
+                    <p>A delectable fruit that can double as a hammer in emergencies.</p>
+                </details>
+                <h3>Here is the sound it makes</h3>>
+                <audio controls>
+                    <source src="bonk.mp3" type="audio/mpeg">
+                    Your browser does not support this fruit.
+                </audio>
+                <h3>Here is monkey with coconut</h3>
+                <video width="400" height="300" controls>
+                    <source src="monkey.mp4" type="video/mp4">
+                    Your browser hates monkeys.
+                </video><br>
+                <label for="cars">Choose your favorite fruit:</label>
+                <select  name="fruitas" id="fruitlist">
+                    <optgroup label="Fruits">
+                        <option value="coconut">Coconut</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="coconut">Coconut</option>
+                    </optgroup>
+                </select><br>
+
+                <label for="fruit2">Choose your fruit:</label>
+                <input list="fruits2" name="fruit2" id="fruit2">
+
+                <datalist id="fruits2">
+                    <option value="Coconut">
+                    <option value="Coconut">
+                    <option value="Coconut">
+                    <option value="Coconut">
+                    <option value="Coconut">
+                </datalist><br>
+
+                <h3>How Many Coconuts Do We Have?</h3>
+                <table>
+                    <caption>Inventory</caption>
+                    <colgroup>
+                        <col span="2" style="background-color:lightblue">
+                    </colgroup>
+                    <tr>
+                      <th>Fruit</th>
+                      <th>Amount</th>
+                    </tr>
+                    <tr>
+                      <td>Coconut</td>
+                      <td>15,862</td>
+                    </tr>
+                  </table><br>
+                  <template>
+                    <button type="button">Click if you like Coconuts!</button>
+                  </template>
+            </fieldset>
+        </span>
     </div>
-    <p id="test"></p>
+
+    <div id="draw">
+        <h2>Empty White Canvas</h2>
+        <p>Are you entertained?</p>
+        <canvas width="200" height="150" style="border:2px solid #000000;"></canvas>
+    </div>
+
+    <div id="draw2">
+        <h2>Some Kinda Circle</h2>
+        <p>Please don't be bored.</p>
+        <svg width="150" height="150">
+            <circle cx="80" cy="80" r="60" stroke="black" stroke-width="4" fill="orange" />
+        </svg><br>
+        <textarea id="circleStuff" name="circleText" rows="3" cols="50">This is a circle.</textarea>
+    </div>
+
+    <h2>Some Kinda Inputs</h2>
+    <form id="inputs">
+        <label for="firstname">First name:</label><br>
+        <input type="text" id="firstname" name="firstname"><br>
+        <label for="lastname">Last name:</label><br>
+        <input type="text" id="lastname" name="lastname"><br>
+        <label for="color">Color:</label><br>
+        <input type="color" id="color" name="color"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="file">File:</label><br>
+        <input type="file" id="file" name="file"><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br>
+        <label for="month">Month:</label><br>
+        <input type="month" id="month" name="month"><br>
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time"><br>
+        <label for="search">Search:</label><br>
+        <input type="search" id="search" name="search"><br>
+        <label for="url">Url:</label><br>
+        <input type="url" id="url" name="url"><br>
+        <input type="submit" value="Submit">
+      </form>
+
+    <footer id="contact">
+        <h3>Contact</h3>
+        <p>Suk Chan (Kevin) Lee<br>UCSD Student</p>
+        <form>
+            <label for="firstname">First name:</label><br>
+            <input type="text" id="firstname" name="firstname"><br>
+            <label for="lastname">Last name:</label><br>
+            <input type="text" id="lastname" name="lastname">
+          </form>
+    </footer>
 
 </body>
 
